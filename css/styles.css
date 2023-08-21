@@ -13,6 +13,26 @@
   --expert-section-background-color: #f4f4fd;
 }
 
+/* ====== COMMON STYLES ======= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--white-background-color);
@@ -40,11 +60,9 @@ img {
 }
 
 .container {
-  max-width: 1128px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 0;
-  margin-right: 0;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .visually-hidden {
@@ -145,11 +163,16 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-background-color);
-  margin: auto;
+  margin: 0 auto 48px;
   max-width: 496px;
 }
 
 .solution-btn-title {
+  display: block;
+  margin: 0 auto;
+  height: 56px;
+  padding: 16px 32px;
+  min-width: 169px;
   background-color: var(--iris-btn-color);
   font-family: inherit;
   font-weight: 500;
@@ -159,7 +182,6 @@ img {
   color: var(--white-background-color);
   border: none;
   cursor: pointer;
-  margin-top: 48px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -174,7 +196,7 @@ img {
 .advantages-section {
   padding-top: 120px;
   padding-bottom: 120px;
-  flex-basis: calc ((100% - 72px) / 4);
+  /* flex-basis: calc ((100% - 72px) / 4); */
 }
 
 
@@ -185,6 +207,7 @@ img {
 }
 
 .advantages-item {
+  flex-basis: calc ((100% - 72px) / 4);
 }
 
 .advantages-title {
@@ -226,15 +249,15 @@ img {
 }
 
 .photo-section-item {
-  width: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 /*----------EXPERT SECTION---------------/* */
 
 .expert-section {
   background-color: var(--expert-section-background-color);
-  padding-top: 120px;
-  padding-bottom: 152px;
+  /* padding-top: 120px;
+  padding-bottom: 152px; */
 }
 
 .expert-team-general-title {
@@ -375,12 +398,14 @@ img {
 }
 
 .portfolio-photo-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
   border: 1px solid var(--cornflower-accent-color);
   border-top-width: 0px;
   padding: 32px 16px;
 }
 
 .portfolio-image link {
+  flex-basis: calc((100% - 2 * 24px) / 3);
   text-decoration: none;
 }
 
