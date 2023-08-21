@@ -19,6 +19,10 @@ body {
   color: var(--slate-text-color);
 }
 
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -35,12 +39,43 @@ body {
 .site-body {
 }
 
+.container {
+  max-width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*----------HEADER---------------/* */
 
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--cornflower-accent-color);
+}
+
+.header >.container {
+  display: flex;
 }
 
 .header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 .header-logo {
@@ -48,9 +83,12 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
+  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris-btn-color);
+  word-spacing: -4px;
+  margin-right: 76px;
 }
 
 
@@ -59,9 +97,15 @@ body {
 }
 
 .header-list {
+  display: flex;
+  gap:40px;
 }
 
 .header-item {
+}
+
+.header-item:last-child {
+  margin-right: 0;
 }
 
 .header-link {
@@ -82,6 +126,7 @@ body {
 }
 
 .header-contact {
+  gap: 40px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -100,6 +145,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-background-color);
+  margin: auto;
+  max-width: 496px;
 }
 
 .solution-btn-title {
@@ -112,6 +159,9 @@ body {
   color: var(--white-background-color);
   border: none;
   cursor: pointer;
+  margin-top: 48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .solution-btn-title:hover,
@@ -122,11 +172,16 @@ body {
 /*----------ADVANTAGES SECTION---------------/* */
 
 .advantages-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  flex-basis: calc ((100% - 72px) / 4);
 }
 
 
 
 .advantages-list {
+  display: flex;
+  gap: 24px;
 }
 
 .advantages-item {
@@ -138,12 +193,14 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
+  margin-bottom: 8px;
 }
 
 .advantages-under-title {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-text-color);
+  min-width: 264px;
 }
 
 /*----------PHOTO SECTION---------------/* */
@@ -160,18 +217,24 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue-color);
+  margin-bottom: 72px;
 }
 
 .photo-section-list {
+  display: flex;
+  gap: 24px;
 }
 
 .photo-section-item {
+  width: calc((100% - 48px) / 3);
 }
 
 /*----------EXPERT SECTION---------------/* */
 
 .expert-section {
   background-color: var(--expert-section-background-color);
+  padding-top: 120px;
+  padding-bottom: 152px;
 }
 
 .expert-team-general-title {
@@ -182,13 +245,20 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue-color);
+  margin-bottom: 72px;
 }
 
 .expert-section-list {
+  display: flex;
+  gap: 24px;
 }
 
 .expert-team-item {
   background-color: var(--white-background-color);
+  width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .expert-team-title {
@@ -198,6 +268,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
+  margin-bottom: 8px;
 }
 
 .expert-position-text {
@@ -211,12 +282,15 @@ body {
 
 .footer {
   background-color: var(--navy-blue-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
+  align-items: center;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -231,6 +305,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--expert-section-background-color);
+  margin-top: 16px;
+  width: 264px;
 }
 
 /* ============================Portfolio ========================// */
@@ -254,12 +330,18 @@ body {
 }
 
 .portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .visually-hidden {
 }
 
 .portfolio-button-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 
 .portfolio-button {
@@ -273,18 +355,29 @@ body {
   color: var(--iris-btn-color);
   border: none;
   cursor: pointer;
+  border: 1px solid var(--cornflower-accent-color);
+  border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: var(--ocean-pressed-color);
   color: var(--white-background-color);
+  border-color: transparent;
 }
 
 .portfolio-photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  justify-content: center;
 }
 
 .portfolio-photo-item {
+  border: 1px solid var(--cornflower-accent-color);
+  border-top-width: 0px;
+  padding: 32px 16px;
 }
 
 .portfolio-image link {
@@ -297,6 +390,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
+  margin-bottom: 8px;
 }
 
 .portfolio-under-title {
