@@ -229,6 +229,7 @@ img {
 /*----------PHOTO SECTION---------------/* */
 
 .photo-section {
+  margin-bottom: 120px;
 }
 
 .photo-section-title {
@@ -256,8 +257,8 @@ img {
 
 .expert-section {
   background-color: var(--expert-section-background-color);
-  /* padding-top: 120px;
-  padding-bottom: 152px; */
+  padding-top: 120px;
+  padding-bottom: 152px;
 }
 
 .expert-team-general-title {
