@@ -1,0 +1,307 @@
+:root {
+  --slate-text-color: #434455;
+  --navy-blue-color: #2e2f42;
+  --ocean-pressed-color: #404bbf;
+  --iris-btn-color: #4d5ae5;
+  --green-success-color: #31d0aa;
+  --light-slate-color: #8e8f99;
+  --cornflower-accent-color: #e7e9fc;
+  --navy-blue-modal-color: #2e2f42;
+  --white-background-color: #ffffff;
+  --cloud-text-color: #e7e9fc;
+  --dairy-modal-background-color: #fcfcfc;
+  --expert-section-background-color: #f4f4fd;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white-background-color);
+  color: var(--slate-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--ocean-pressed-color);
+}
+
+.site-body {
+}
+
+/*----------HEADER---------------/* */
+
+.header {
+}
+
+.header-navigation {
+}
+
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris-btn-color);
+}
+
+
+.header-logo-studio {
+  color: var(--navy-blue-color);
+}
+
+.header-list {
+}
+
+.header-item {
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--ocean-pressed-color);
+}
+
+.header-address {
+  font-style: normal;
+}
+
+.header-contact {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate-text-color);
+}
+
+/*----------SOLUTION SECTION---------------/* */
+
+.solution-title-section {
+  background-color: var(--navy-blue-color);
+}
+
+.solution-hidden-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white-background-color);
+}
+
+.solution-btn-title {
+  background-color: var(--iris-btn-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-background-color);
+  border: none;
+  cursor: pointer;
+}
+
+.solution-btn-title:hover,
+.solution-btn-title:focus {
+  background-color: var(--ocean-pressed-color);
+}
+
+/*----------ADVANTAGES SECTION---------------/* */
+
+.advantages-section {
+}
+
+
+
+.advantages-list {
+}
+
+.advantages-item {
+}
+
+.advantages-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.advantages-under-title {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate-text-color);
+}
+
+/*----------PHOTO SECTION---------------/* */
+
+.photo-section {
+}
+
+.photo-section-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue-color);
+}
+
+.photo-section-list {
+}
+
+.photo-section-item {
+}
+
+/*----------EXPERT SECTION---------------/* */
+
+.expert-section {
+  background-color: var(--expert-section-background-color);
+}
+
+.expert-team-general-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue-color);
+}
+
+.expert-section-list {
+}
+
+.expert-team-item {
+  background-color: var(--white-background-color);
+}
+
+.expert-team-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.expert-position-text {
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--slate-text-color);
+}
+
+/*----------FOOTER---------------/* */
+
+.footer {
+  background-color: var(--navy-blue-color);
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris-btn-color);
+}
+
+.footer-logo-studio {
+  color: var(--expert-section-background-color);
+}
+
+.footer-under-title {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--expert-section-background-color);
+}
+
+/* ============================Portfolio ========================// */
+
+.header-list {
+}
+
+.header-item {
+}
+
+.header-link {
+}
+
+.header-address {
+}
+
+.header-item-mail {
+}
+
+.header-item-tel {
+}
+
+.portfolio-section {
+}
+
+.visually-hidden {
+}
+
+.portfolio-button-list {
+}
+
+.portfolio-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  background-color: var(--expert-section-background-color);
+  color: var(--iris-btn-color);
+  border: none;
+  cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--ocean-pressed-color);
+  color: var(--white-background-color);
+}
+
+.portfolio-photo-list {
+}
+
+.portfolio-photo-item {
+}
+
+.portfolio-image link {
+  text-decoration: none;
+}
+
+.portfolio-photo-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.portfolio-under-title {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate-text-color);
+}
